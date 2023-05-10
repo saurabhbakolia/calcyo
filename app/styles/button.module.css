@@ -1,0 +1,41 @@
+.button {
+  position: relative;
+  display: inline-block;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background: #dbd5cd;
+  transition: 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.button:hover:before {
+  transform: scaleY(0);
+}
+
+.button:after{
+    content:"";
+    position:absolute;
+    left:6px;
+    top:-2px;
+    width:calc(100% - 12px);
+    height: calc(100% + 4px);
+    background: #dbd5cd;
+    transition: 0.5s ease-in-out;
+    transform: scaleX(1);
+}
+
+.button:hover:after{
+    transform: scaleX(0);
+}
+
+.button .link{
+    position:relative;
+    z-index:3;
+}
