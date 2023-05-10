@@ -37,7 +37,7 @@ const LandingPage = () => {
                 <p></p>
                 {/* <CarouselComponent />      */}
             </div>
-            <Footer/>
+            <Footer />
         </>
     );
 };
